@@ -1,5 +1,6 @@
 #Application Configuration
 server:
+waitTimeInMsWhenSyncEmpty: 0 
   port: 8091
 
 # To See H2 Console in Browser:
