@@ -4,7 +4,6 @@ import academy.digitallab.store.product2.entity.Category;
 import academy.digitallab.store.product2.entity.Product;
 import academy.digitallab.store.product2.repository.IProductRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
