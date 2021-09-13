@@ -23,7 +23,7 @@ public class CustomerRepositoryMockTest {
         Customer customer = Customer.builder()
                 .name("juan")
                 .lastname("osorio")
-                .DocumentType("CC")
+                .documentType("CC")
                 .numberOfDocument(12345)
                 .age(19)
                 .cityOfBirth("Medellin").build();
@@ -31,7 +31,7 @@ public class CustomerRepositoryMockTest {
         customerRepository.save(customer);
 
 
-        Customer founds = customerRepository.findBynumberOfDocument(12345);
+        Customer founds = customerRepository.findByNumberOfDocument(12345);
 
         Assertions.assertThat(founds).isEqualTo(1);
 

@@ -1,4 +1,4 @@
-package pragma.com.client.entity;
+package com.pragma.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,8 +12,8 @@ import javax.validation.constraints.NotEmpty;
 @Table(name = "tbl_client")
 @Data
 @Builder
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class Customer {
 
     @Id

@@ -10,6 +10,6 @@ import java.util.List;
 public interface ICustomerRepository extends JpaRepository<Customer,Long> {
 
      List<Customer> findByDocumentType(String DocumentType);
-     Customer findBynumberOfDocument(int documentNumber);
+     Customer findByNumberOfDocument(int documentNumber);
 
 }

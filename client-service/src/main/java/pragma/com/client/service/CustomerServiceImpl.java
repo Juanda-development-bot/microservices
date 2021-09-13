@@ -26,12 +26,12 @@ public class CustomerServiceImpl implements ICustomerService{
 
     @Override
     public Customer findBynumberOfDocument(int number) {
-        return customerRepository.findBynumberOfDocument(number);
+        return customerRepository.findByNumberOfDocument(number);
     }
 
     @Override
     public Customer createCustomer(Customer customer) {
-        Customer customerDB = customerRepository.findBynumberOfDocument (customer.getNumberOfDocument());
+        Customer customerDB = customerRepository.findByNumberOfDocument (customer.getNumberOfDocument());
         if (customerDB != null){
             return  customerDB;
         }
@@ -41,7 +41,7 @@ public class CustomerServiceImpl implements ICustomerService{
 
     @Override
     public Customer updateCustomer(Customer customer) {
-        Customer customerDB = customerRepository.findBynumberOfDocument (customer.getNumberOfDocument());
+        Customer customerDB = customerRepository.findByNumberOfDocument (customer.getNumberOfDocument());
         if (customerDB != null){
             return  customerDB;
         }
@@ -54,7 +54,7 @@ public class CustomerServiceImpl implements ICustomerService{
     @Override
     public Customer deleteCustomer(Customer customer) {
 
-        Customer customerDB = customerRepository.findBynumberOfDocument (customer.getNumberOfDocument());
+        Customer customerDB = customerRepository.findByNumberOfDocument (customer.getNumberOfDocument());
         if (customerDB != null){
             return  customerDB;
         }
@@ -66,6 +66,6 @@ public class CustomerServiceImpl implements ICustomerService{
 
     @Override
     public Customer getCustomer(int numberOfDocument) {
-        return customerRepository.findBynumberOfDocument(numberOfDocument);
+        return customerRepository.findByNumberOfDocument(numberOfDocument);
     }
 }
